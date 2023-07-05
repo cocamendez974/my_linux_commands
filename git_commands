@@ -1,1 +1,8 @@
-//Initial
+GENERATE SSH KEY PAIR --ENSURE TO BE IN HOME DIRECTORY, ELSEWHERE THE FILES WILL BE SAVED ON THE CURRENT ONE
+ssh-keygen -t rsa -b 9096 -C "cocamendez974@gmail.com"
+
+UPDATE REMOTE URL TO USE THE SSH
+git remote set-ur origin git@github.com:cocamendez974/my_repository.git
+
+PUSH TO GITHUB
+git push -u origin master
